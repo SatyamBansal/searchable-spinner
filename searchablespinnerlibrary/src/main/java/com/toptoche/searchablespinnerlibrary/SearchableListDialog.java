@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -26,7 +25,7 @@ public class SearchableListDialog extends DialogFragment implements
 
     private static final String ITEMS = "items";
 
-    private ArrayAdapter listAdapter;
+    private SearchableAdapter listAdapter;
 
     private ListView _listViewItems;
 
@@ -157,7 +156,7 @@ public class SearchableListDialog extends DialogFragment implements
         _listViewItems = (ListView) rootView.findViewById(R.id.listItems);
 
         //create the adapter by passing your ArrayList data
-        listAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1,
+        listAdapter = new SearchableAdapter(getActivity(), android.R.layout.simple_list_item_1,
                 items);
         //attach the adapter to the list
         _listViewItems.setAdapter(listAdapter);
@@ -196,9 +195,9 @@ public class SearchableListDialog extends DialogFragment implements
 //        listAdapter.filterData(s);
         if (TextUtils.isEmpty(s)) {
 //                _listViewItems.clearTextFilter();
-            ((ArrayAdapter) _listViewItems.getAdapter()).getFilter().filter(null);
+            ((SearchableAdapter) _listViewItems.getAdapter()).getFilter().filter(null);
         } else {
-            ((ArrayAdapter) _listViewItems.getAdapter()).getFilter().filter(s);
+            ((SearchableAdapter) _listViewItems.getAdapter()).getFilter().filter(s);
         }
         if (null != _onSearchTextChanged) {
             _onSearchTextChanged.onSearchTextChanged(s);

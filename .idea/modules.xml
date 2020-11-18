@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SearchableSpinner.iml" filepath="$PROJECT_DIR$/SearchableSpinner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/searchablespinnerlibrary/searchablespinnerlibrary.iml" filepath="$PROJECT_DIR$/searchablespinnerlibrary/searchablespinnerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mohammad2416-SearchableSpinner.iml" filepath="$PROJECT_DIR$/.idea/modules/Mohammad2416-SearchableSpinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Mohammad2416-SearchableSpinner.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Mohammad2416-SearchableSpinner.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/searchablespinnerlibrary/Mohammad2416-SearchableSpinner.searchablespinnerlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/searchablespinnerlibrary/Mohammad2416-SearchableSpinner.searchablespinnerlibrary.iml" />
     </modules>
   </component>
 </project>

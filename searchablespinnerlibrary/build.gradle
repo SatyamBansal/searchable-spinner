@@ -123,3 +123,6 @@ artifacts {
 task findConventions << {
     println project.getConvention()
 }
+repositories {
+    mavenCentral()
+}
